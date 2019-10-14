@@ -1,16 +1,13 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// В этом файле должны быть стили для БЭМ-блока social, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {
+.social {
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 30px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
 }

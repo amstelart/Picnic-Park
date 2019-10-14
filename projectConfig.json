@@ -58,7 +58,16 @@
     "embed-responsive": [],
     "pie-chart": [],
     "fields-group": [],
-    "tooltip": []
+    "tooltip": [],
+    "contacts-group": [],
+    "contacts-item": [],
+    "social": [],
+    "page-top": [],
+    "map-location-wrap": [],
+    "location-grid": [],
+    "location-card": [],
+    "main": [],
+    "about": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

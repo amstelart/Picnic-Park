@@ -68,6 +68,7 @@ $transition-time:             0.3s !default;
   &__link {
     display: block;
     padding: 0.5em;
+    color: inherit;
     text-decoration: none;
     background-color: #fff;
 

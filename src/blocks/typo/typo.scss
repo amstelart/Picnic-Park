@@ -16,7 +16,7 @@ $font-size--h3:               1.5em !default;
 $font-size--h4:               1.25em !default;
 $font-size--h5:               1em !default;
 $font-size--h6:               1em !default;
-$font-size--small:            0.75em !default;
+$font-size--small:            1em !default;
 
 $line-height:                 1.375em !default;
 
@@ -38,14 +38,64 @@ $border-radius:               3px !default;
 //   font-style: normal;
 // }
 
+@font-face {
+	font-family: 'Museo Sans Cyrl 500';
+	src: url('../fonts/MuseoSansCyrl-500.eot');
+	src: local('../fonts/MuseoSansCyrl-500'),
+		url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+		url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "PFCentroSlabProBold";
+    src: url("../fonts/PFCentroSlabProBold.eot");
+    src: url("../fonts/PFCentroSlabProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PFCentroSlabProBold.woff") format("woff"),
+    url("../fonts/PFCentroSlabProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PFCentroSlabProMedium";
+    src: url("../fonts/PFCentroSlabProMedium.eot");
+    src: url("../fonts/PFCentroSlabProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PFCentroSlabProMedium.woff") format("woff"),
+    url("../fonts/PFCentroSlabProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 
 body {
   // ТОЛЬКО типографика!
   font-family: $font-family;
-  font-size: $font-size;
+  font-size: 14px;
   line-height: $line-height;
   color: $text-color;
+
+  @media (min-width: $screen-xl) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    font-size: $font-size;
+  }
+}
+
+.display-1 {
+  font-family: "PFCentroSlabProBold";
+  font-size: px-to-em(70);
+  color: #1A1A1A;
+}
+.display-2 {
+  font-family: "PFCentroSlabProBold";
+  font-size: px-to-em(48);
+  color: #1A1A1A;
 }
 
 // .h1,
@@ -174,7 +224,8 @@ hr {
 }
 
 // .small,
-small {
+small,
+.small {
   font-size: $font-size--small;
 }
 

@@ -21,7 +21,7 @@ $color-warning:               hsl(35, 84%, 62%);
 
 // Семантические цвета
 
-$text-color:                  $gray-darkest;
+$text-color:                  #333;
 $text-color--muted:           $gray;
 $body-bg:                     #fff;
 
@@ -34,7 +34,7 @@ $border-color:                $gray-light;
 
 // Базовая типографика
 
-$font-size:                   14px;
+$font-size:                   18px;
 $font-size--h1:               2.25em;
 $font-size--h2:               1.875em;
 $font-size--h3:               1.5em;
@@ -45,7 +45,7 @@ $font-size--small:            0.75em;
 
 $line-height:                 1.375em;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family:                 'Museo Sans Cyrl 500', 'Arial', sans-serif;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
@@ -78,8 +78,8 @@ $grid-gutter-width:           30px;
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      0.6em;
+$field-padding-horizontal:    1.4em;
 
 $border-radius:               3px;
 $opacity:                     0.7;

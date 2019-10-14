@@ -5,4 +5,26 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 22px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 30px;
+  }
+
+  .main-nav {
+    margin: 15px 0;
+    margin-right: auto;
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    .contacts-group {
+      display: none;
+    }
+  }
+
 }

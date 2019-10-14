@@ -33,6 +33,10 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__contacts {
+
+  }
 }
 
 *,
@@ -89,4 +93,22 @@ svg {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  @include container;
+}
+
+.container-narrow {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 6px;
+  }
 }
