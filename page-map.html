@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="container">
+          <div class="page-header__inner">
+            <a href="index.html" class="logo page-header__logo"><img src="img/logo.svg" alt="Пикник парк"></a>
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a href="index.html" class="main-nav__link">
+                    О парке
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-map.html" class="main-nav__link">
+                    Карта
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-gallery.html" class="main-nav__link">
+                    Галерея
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-locations.html" class="main-nav__link">
+                    Локации
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-offers.html" class="main-nav__link">
+                    Спецпредложения
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-contacts.html" class="main-nav__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts-group">
+              <div class="contacts-group__item">
+                <a class="contacts-item contacts-item--phone" href="tel:+74712550915"><svg class="contacts-item__icon" width="15" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>8 4712 550 915</a>
+                <p class="small"><a href="#">Заказать звонок</a></p>
+              </div>
+              <div class="contacts-group__item">
+                <a class="contacts-item contacts-item--addr" href="#"><svg class="contacts-item__icon" width="15" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use></svg>Посмотреть на карте</a>
+                <p class="small">Курск, Парк имени 50-летия ВЛКСМ</p>
+              </div>
+            </div>
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="page__map" role="main">
+
+        <div class="container">
+          <div class="container-narrow">
+            <div class="page-top page-top--center">
+              <h1 class="display-2">Карта локации</h1>
+              <p>Парк регулярно обновляется</p>
+              <a class="btn" href="#">Все локации</a>
+            </div>
+            <div class="map-location-wrap">
+              <img src="img/map-location.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <div class="page-footer__inner">
+            <ul class="social">
+              <li class="social__link-wrap">
+                <a class="social__link" href="#"><img src="img/social-icon-vk.svg" alt=""></a>
+              </li>
+              <li class="social__link-wrap">
+                <a class="social__link" href="#"><img src="img/social-icon-inst.svg" alt=""></a>
+              </li>
+            </ul>
+            <a class="dev-copyright" href="#" target="_blank"><img src="img/bp-logo.svg" alt=""></a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
